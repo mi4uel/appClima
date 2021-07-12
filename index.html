@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLIMA</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script type="text/javascript" src="js/app.js"></script>
+	
+</head>
+<body onload="onLoad()">
+
+	<div class="loader" id="loader">Cargando...</div>
+	<div id="app">
+		<div class="information">
+			<h3 id="location"></h3>
+			<h4 id="date"></h4>
+		</div>
+		<div class="icon" id="icon">
+			<div id="icondescription"></div>
+			<h2 id="temperature"></h2>
+			<div id="description"></div>			
+		</div>
+		<div class="aditionaldata">
+			<div class="humidity">
+				<p>Humedad</p>
+				<p id="humidity"></p>
+			</div>
+			<div class="pressure">
+				<p>Presión</p>
+				<p id="pressure"></p>
+			</div>
+			<div class="temp_min">
+				<p>Minima</p>
+				<p id="temp_min"></p>
+			</div>
+			<div class="temp_max">
+				<p>Maxima</p>
+				<p id="temp_max"></p>
+			</div>			
+		</div>
+		
+	</div>
+
+</body>
+</html>
