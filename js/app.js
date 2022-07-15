@@ -2,7 +2,7 @@ const APP_ID = 'bcf53cdb8a1be04828df4e351082730e'; //api key de la pagina del cl
 
 const fetchData = position => {
     const { latitude, longitude} = position.coords;//del objeto position agregamos el valor de latitude y longitude a coords
-    fetch(`http://api.openweathermap.org/data/2.5/weather?lang=es&units=metric&lat=${latitude}&lon=${longitude}&units=metric&appid=${APP_ID}`)//llamamos a la api con sus parametros
+    fetch(`https://api.openweathermap.org/data/2.5/weather?lang=es&units=metric&lat=${latitude}&lon=${longitude}&units=metric&appid=${APP_ID}`)//llamamos a la api con sus parametros
         .then(response => response.json())//pasamos a objeto la respuesta
         .then(data => setWeatherData(data));//usamos la funcion setWeatherData
 }
