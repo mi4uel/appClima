@@ -13,17 +13,18 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #37474F
-
+  background: rgb(0,24,187);
+background: linear-gradient(125deg, rgba(0,24,187,1) 0%, rgba(86,104,228,1) 50%, rgba(0,24,187,1) 100%);
 }
 #app{
   display: none;
   background: #FAFAFA;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 80%;
+  height: 80%;
   color: #37474F;
-  border: 1px solid #607D8B;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   border-radius: 3px;
 }
 .Clouds{
@@ -33,7 +34,10 @@ body{
 .Clear{
   background-image: url(../img/Clear.jpg);
   background-size: cover;
-
+}
+.Mist{
+  background-image: url(../img/Mist.jpg);
+  background-size: cover;
 }
 .information{
   display: flex;
@@ -59,7 +63,7 @@ body{
 }
 .icon{
   margin-bottom: 25px;
-  height: 250px;
+  height: 100%;
   width: 100%;
   text-align: center;
   display: flex;
